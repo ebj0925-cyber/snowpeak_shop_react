@@ -1,0 +1,278 @@
+.site-header {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  font-family: Arial, sans-serif;
+}
+
+.header-top,
+.header-main,
+.header-dropdown-inner {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 auto;
+  padding-inline: 32px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.header-logo {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.header-logo img {
+  display: block;
+  height: 34px;
+}
+
+.header-user-menu {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header-user-menu button {
+  position: relative;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: #111;
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.header-user-menu button:hover {
+  color: #777;
+}
+
+.header-cart-link em {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 1;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-top: 16px;
+  padding-bottom: 22px;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav-btn {
+  position: relative;
+  border: 0;
+  background: transparent;
+  padding: 0 0 14px;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.header-nav-btn::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -23px;
+  height: 2px;
+  background: #111;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.18s ease;
+  content: '';
+}
+
+.header-nav-btn:hover::after,
+.header-nav-btn.is-active::after {
+  transform: scaleX(1);
+}
+
+.header-nav-btn.is-green {
+  color: #198c24;
+}
+
+.header-nav-btn.is-light {
+  font-weight: 400;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 0 0 330px;
+  height: 44px;
+  padding: 0 14px 0 22px;
+  background: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.header-search strong {
+  flex: 0 0 auto;
+  color: #555;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.header-search input {
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #555;
+  font-size: 13px;
+}
+
+.header-search button {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.header-search img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 4px auto;
+}
+
+.header-dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  min-height: 172px;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.02);
+}
+
+.header-dropdown-inner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 48px;
+  padding-top: 26px;
+  padding-bottom: 30px;
+}
+
+.header-dropdown-column strong {
+  display: block;
+  margin-bottom: 16px;
+  color: #111;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.header-dropdown-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-dropdown-column button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: #111;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+}
+
+.header-dropdown-column button:hover {
+  color: #777;
+}
+
+@media (max-width: 1100px) {
+  .header-top,
+  .header-main,
+  .header-dropdown-inner {
+    padding-inline: 20px;
+  }
+
+  .header-main {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header-nav ul {
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .header-search {
+    width: 100%;
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    align-items: flex-start;
+    gap: 14px;
+    flex-direction: column;
+  }
+
+  .header-user-menu {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .header-nav-btn {
+    font-size: 14px;
+  }
+
+  .header-dropdown {
+    position: static;
+  }
+
+  .header-dropdown-inner {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 28px;
+  }
+}

@@ -1,0 +1,88 @@
+const Bag = [
+  {
+    id: 1,
+    title: '\uCEA0\uD50C \uBC31\uD329 12L Light Beige',
+    price: '119,000',
+    img: '/img/bag/bag01.jpg',
+    isNew: true,
+  },
+  {
+    id: 2,
+    title: '\uCEA0\uD50C \uBC31\uD329 12L Black',
+    price: '119,000',
+    img: '/img/bag/bag02.jpg',
+    isNew: true,
+  },
+  {
+    id: 3,
+    title: '\uCEA0\uD50C \uBC31\uD329 15L Fog Gray',
+    price: '129,000',
+    img: '/img/bag/bag03.jpg',
+    isNew: true,
+  },
+  {
+    id: 4,
+    title: '\uCEA0\uD50C \uBC31\uD329 15L Black',
+    price: '129,000',
+    img: '/img/bag/bag04.jpg',
+    isNew: true,
+  },
+  {
+    id: 5,
+    title: '\uD3EC\uD504\uC5D0\uC148 \uBBF8\uB2C8\uBC31 4L Cream Beige',
+    price: '69,000',
+    img: '/img/bag/bag05.jpg',
+    isNew: true,
+  },
+  {
+    id: 6,
+    title: '\uD3EC\uD504\uC5D0\uC148 \uBBF8\uB2C8\uBC31 4L Black',
+    price: '69,000',
+    img: '/img/bag/bag06.jpg',
+    isNew: true,
+  },
+  {
+    id: 7,
+    title: '\uD3EC\uD504\uC5D0\uC148 \uBBF8\uB2C8\uBC31 6L Khaki Gray',
+    price: '79,000',
+    img: '/img/bag/bag07.jpg',
+    isNew: true,
+  },
+  {
+    id: 8,
+    title: '\uD3EC\uD504\uC5D0\uC148 \uBBF8\uB2C8\uBC31 6L Rustic Khaki',
+    price: '79,000',
+    img: '/img/bag/bag08.jpg',
+    isNew: true,
+  },
+  {
+    id: 9,
+    title: '\uC2A4\uD14C\uB514 \uBC31\uD329 25L Rustic Khaki',
+    price: '169,000',
+    img: '/img/bag/bag09.jpg',
+    isNew: true,
+  },
+  {
+    id: 10,
+    title: '\uC2A4\uD14C\uB514 \uC2AC\uB9C1\uBC31 5L Fog Gray',
+    price: '89,000',
+    img: '/img/bag/bag10.jpg',
+    isNew: true,
+  },
+  {
+    id: 11,
+    title: '\uC2A4\uD14C\uB514 \uCE94\uBC84\uC2A4 \uD1A0\uD2B8\uBC31 13L Chocolate Khaki',
+    price: '129,000',
+    img: '/img/bag/bag11.jpg',
+    isNew: true,
+  },
+  {
+    id: 12,
+    title: '\uC2A4\uD14C\uB514 \uD799\uC0C9 2L Vintage Gray',
+    price: '79,000',
+    img: '/img/bag/bag12.jpg',
+    isNew: true,
+  },
+];
+
+export default Bag;
