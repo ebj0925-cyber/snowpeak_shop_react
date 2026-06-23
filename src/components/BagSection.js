@@ -14,7 +14,7 @@ function BagSection() {
 
   return (
     <section className="product-slider-section">
-      <Title subtitle={'\uC77C\uC0C1\uC5D0 \uD3B8\uC548\uD568\uC744 \uB354\uD558\uB294'} title="SNOWPEAK BAG" />
+      <Title subtitle={'일상에 편안함을 더하는'} title="SNOWPEAK BAG" />
 
       <div className="product-slider bag-slider">
         <Swiper

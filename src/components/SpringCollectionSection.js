@@ -11,7 +11,7 @@ function SpringCollectionSection() {
   return (
     <section className="spring-collection">
       <Title
-        subtitle={'\uC2A4\uB178\uC6B0\uD53C\uD06C\uC758 \uC0C8\uB85C\uC6B4 \uACC4\uC808'}
+        subtitle={'스노우피크의 새로운 계절'}
         title="SPRING COLLECTION"
         tabs={SpringCollection.map((tab) => tab.tabTitle)}
         activeTab={activeTab}
@@ -45,7 +45,7 @@ function SpringCollectionSection() {
               <div className="product-info">
                 <p className="product-name">{item.title}</p>
                 <div className="product-price-row">
-                  <span className="product-price">{item.price}{'\uC6D0'}</span>
+                  <span className="product-price">{item.price}{'원'}</span>
                 </div>
               </div>
             </div>

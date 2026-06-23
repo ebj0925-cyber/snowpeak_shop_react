@@ -12,10 +12,10 @@ const DEFAULT_FILTERS = {
 };
 
 const SORT_LABELS = [
-  '\uD310\uB9E4\uC778\uAE30\uC21C',
-  '\uB0AE\uC740\uAC00\uACA9\uC21C',
-  '\uB192\uC740\uAC00\uACA9\uC21C',
-  '\uC2E0\uC0C1\uD488\uC21C',
+  '판매인기순',
+  '낮은가격순',
+  '높은가격순',
+  '신상품순',
 ];
 
 function CategoryPage() {
@@ -83,13 +83,13 @@ function CategoryPage() {
                   <img src={product.img} alt={product.title} />
                 </div>
                 <h2>{product.title}</h2>
-                <p>{product.price}{'\uC6D0'}</p>
+                <p>{product.price}{'원'}</p>
               </article>
             ))}
           </div>
         ) : (
           <div className="category-empty">
-            <p>{'\uD45C\uC2DC\uD560 \uC0C1\uD488\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.'}</p>
+            <p>{'표시할 상품이 없습니다.'}</p>
           </div>
         )}
       </section>

@@ -7,13 +7,13 @@ const K = {
   kids: 'KIDS',
   acc: 'ACC & SHOES',
   outlet: 'OUTLET',
-  top: '\uC0C1\uC758',
-  outer: '\uC544\uC6B0\uD130',
-  bottom: '\uD558\uC758',
-  bag: '\uAC00\uBC29',
-  hat: '\uBAA8\uC790',
-  goods: '\uC6A9\uD488',
-  shoes: '\uC288\uC988',
+  top: '상의',
+  outer: '아우터',
+  bottom: '하의',
+  bag: '가방',
+  hat: '모자',
+  goods: '용품',
+  shoes: '슈즈',
 };
 
 const bagCatalog = BagData.map((item) => ({
@@ -27,11 +27,11 @@ const bagCatalog = BagData.map((item) => ({
 }));
 
 const getSpringMeta = (tabTitle) => {
-  if (tabTitle.includes('\uB9E8\uD22C\uB9E8')) {
+  if (tabTitle.includes('맨투맨')) {
     return { group: K.men, category: K.top };
   }
 
-  if (tabTitle.includes('\uC5EC\uC131')) {
+  if (tabTitle.includes('여성')) {
     return { group: K.women, category: K.outer };
   }
 
@@ -45,12 +45,12 @@ const getSpringMeta = (tabTitle) => {
 const getSpringItemMeta = (item, sectionMeta) => {
   const title = item.title;
 
-  if (title.includes('\uC5EC\uC131')) {
-    if (title.includes('\uD32C\uCE20') || title.includes('\uC2A4\uCEE4\uD2B8')) {
+  if (title.includes('여성')) {
+    if (title.includes('팬츠') || title.includes('스커트')) {
       return { group: K.women, category: K.bottom };
     }
 
-    if (title.includes('\uB9E8\uD22C\uB9E8') || title.includes('\uD2F0\uC154\uCE20')) {
+    if (title.includes('맨투맨') || title.includes('티셔츠')) {
       return { group: K.women, category: K.top };
     }
 
@@ -58,11 +58,11 @@ const getSpringItemMeta = (item, sectionMeta) => {
   }
 
   if (sectionMeta.group === K.acc) {
-    if (title.includes('\uC5D0\uC13C\uC15C')) {
+    if (title.includes('에센셜')) {
       return { group: K.acc, category: K.shoes };
     }
 
-    if (title.includes('\uBCFC\uCEA1') || title.includes('\uBAA8\uC790')) {
+    if (title.includes('볼캡') || title.includes('모자')) {
       return { group: K.acc, category: K.hat };
     }
 
@@ -96,16 +96,16 @@ const ProductCatalog = [
     id: 1,
     group: K.men,
     category: K.outer,
-    title: '\uB8E8\uD2B8 \uD3EC\uCF13 \uBC18\uD314 \uD3F4\uB85C \uC154\uCE20 Black',
+    title: '루트 포켓 반팔 폴로 셔츠 Black',
     price: '169,000',
     img: '/img/new_arrivals/new_01.jpg',
-    badge: '\uC7AC\uC785\uACE0',
+    badge: '재입고',
   },
   {
     id: 2,
     group: K.men,
     category: K.bottom,
-    title: '\uB8E8\uD2B8 \uBC84\uBBA4\uB2E4 \uD32C\uCE20 Rustic Khaki',
+    title: '루트 버뮤다 팬츠 Rustic Khaki',
     price: '149,000',
     img: '/img/new_arrivals/new_02.jpg',
   },
@@ -113,7 +113,7 @@ const ProductCatalog = [
     id: 3,
     group: K.men,
     category: K.outer,
-    title: '\uD53C\uCF54 \uCD08\uACBD\uB7C9 \uBC14\uB78C\uB9C9\uC774 Ice Gray',
+    title: '피코 초경량 바람막이 Ice Gray',
     price: '149,000',
     img: '/img/new_arrivals/new_03.jpg',
   },
@@ -121,7 +121,7 @@ const ProductCatalog = [
     id: 4,
     group: K.men,
     category: K.top,
-    title: '\uC5D0\uCF54 \uD0C0\uC2AC\uB780 \uBCFC\uCEA1 Smog Khaki',
+    title: '에코 타슬란 볼캡 Smog Khaki',
     price: '49,000',
     img: '/img/new_arrivals/new_04.jpg',
   },
@@ -129,7 +129,7 @@ const ProductCatalog = [
     id: 5,
     group: K.men,
     category: K.outer,
-    title: '\uCEA0\uD50C \uC720\uD2F8\uB9AC\uD2F0 \uBC14\uB78C\uB9C9\uC774 Rustic Khaki',
+    title: '캠플 유틸리티 바람막이 Rustic Khaki',
     price: '189,000',
     img: '/img/new_arrivals/new_05.jpg',
   },
@@ -137,7 +137,7 @@ const ProductCatalog = [
     id: 6,
     group: K.men,
     category: K.top,
-    title: '\uC5B4\uB4E4 \uADF8\uB798\uD53D \uB9E8\uD22C\uB9E8 Ice Gray',
+    title: '어들 그래픽 맨투맨 Ice Gray',
     price: '89,000',
     img: '/img/new_arrivals/new_06.jpg',
     badge: 'SOLD OUT',
@@ -146,7 +146,7 @@ const ProductCatalog = [
     id: 7,
     group: K.men,
     category: K.top,
-    title: '\uB79C\uB4DC \uD6C4\uB4DC \uD2F0\uC154\uCE20 Vintage Gray',
+    title: '랜드 후드 티셔츠 Vintage Gray',
     price: '99,000',
     img: '/img/detail/detail01.jpg',
   },
@@ -154,7 +154,7 @@ const ProductCatalog = [
     id: 8,
     group: K.men,
     category: K.bottom,
-    title: '\uB8E8\uD2B8 \uCE74\uACE0 \uD32C\uCE20 Wine',
+    title: '루트 카고 팬츠 Wine',
     price: '129,000',
     img: '/img/new_arrivals/new_08.jpg',
   },
@@ -162,16 +162,16 @@ const ProductCatalog = [
     id: 101,
     group: K.women,
     category: K.outer,
-    title: '\uD53C\uCF54 \uCD08\uACBD\uB7C9 \uC5EC\uC131 \uBC14\uB78C\uB9C9\uC774 Light Blue',
+    title: '피코 초경량 여성 바람막이 Light Blue',
     price: '149,000',
     img: '/img/springcollection/spring1-04.jpg',
-    badge: '\uC7AC\uC785\uACE0',
+    badge: '재입고',
   },
   {
     id: 102,
     group: K.women,
     category: K.outer,
-    title: '\uD53C\uCF54 \uCD08\uACBD\uB7C9 \uC5EC\uC131 \uBC14\uB78C\uB9C9\uC774 Sand Beige',
+    title: '피코 초경량 여성 바람막이 Sand Beige',
     price: '149,000',
     img: '/img/springcollection/spring3-01.jpg',
   },
@@ -181,7 +181,7 @@ const ProductCatalog = [
     id: 202,
     group: K.acc,
     category: K.hat,
-    title: '\uC5D0\uCF54 \uD0C0\uC2AC\uB780 \uBCFC\uCEA1 Olive Green',
+    title: '에코 타슬란 볼캡 Olive Green',
     price: '49,000',
     img: '/img/springcollection/spring4-03.jpg',
   },
@@ -196,7 +196,7 @@ export const GROUP_LABELS = {
 };
 
 export const CATEGORY_LABELS = {
-  all: '\uC804\uCCB4',
+  all: '전체',
   top: K.top,
   outer: K.outer,
   bottom: K.bottom,

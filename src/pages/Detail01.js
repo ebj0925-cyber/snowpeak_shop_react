@@ -31,22 +31,22 @@ function PurchaseBox({
           <button
             type="button"
             className="detail-share-btn"
-            aria-label={'\uACF5\uC720\uD558\uAE30'}
+            aria-label={'공유하기'}
           >
-            <img src="/img/icons/icon-share.png" alt={'\uACF5\uC720\uD558\uAE30'} />
+            <img src="/img/icons/icon-share.png" alt={'공유하기'} />
           </button>
         </div>
 
         <div className="detail-info-table">
           <div className="detail-info-row">
-            <span className="detail-info-label">{'\uD310\uB9E4\uAC00'}</span>
+            <span className="detail-info-label">{'판매가'}</span>
             <strong className="detail-info-price">
-              {product.price.toLocaleString()}{'\uC6D0'}
+              {product.price.toLocaleString()}{'원'}
             </strong>
           </div>
 
           <div className="detail-info-row">
-            <span className="detail-info-label">{'\uAD6C\uB9E4\uD61C\uD0DD'}</span>
+            <span className="detail-info-label">{'구매혜택'}</span>
             <div className="detail-info-value detail-benefit-list">
               {product.benefits.map((item, index) => (
                 <p key={index}>{item}</p>
@@ -55,12 +55,12 @@ function PurchaseBox({
           </div>
 
           <div className="detail-info-row">
-            <span className="detail-info-label">{'\uBAA8\uB378\uBA85'}</span>
+            <span className="detail-info-label">{'모델명'}</span>
             <div className="detail-info-value">{product.modelName}</div>
           </div>
 
           <div className="detail-info-row">
-            <span className="detail-info-label">{'\uBC30\uC1A1\uC548\uB0B4'}</span>
+            <span className="detail-info-label">{'배송안내'}</span>
             <div className="detail-info-value">
               <p>{product.shippingText1}</p>
               <p>{product.shippingText2}</p>
@@ -70,7 +70,7 @@ function PurchaseBox({
       </div>
 
       <div className="detail-option-group">
-        <p className="detail-option-label">{'\uC0C9\uC0C1'}</p>
+        <p className="detail-option-label">{'색상'}</p>
         <div className="detail-color-row">
           {product.colors.map((color, index) => (
             <button
@@ -91,7 +91,7 @@ function PurchaseBox({
       </div>
 
       <div className="detail-option-group">
-        <p className="detail-option-label">{'\uC0AC\uC774\uC988'}</p>
+        <p className="detail-option-label">{'사이즈'}</p>
         <div className="detail-size-row">
           {product.sizes.map((size) => (
             <button
@@ -110,16 +110,16 @@ function PurchaseBox({
 
       <div className="detail-action-grid">
         <button type="button" className="detail-line-btn" onClick={onGoCart}>
-          {'\uC7A5\uBC14\uAD6C\uB2C8'}
+          {'장바구니'}
         </button>
         <button type="button" className="detail-line-btn">
-          {'\uCC1C\uD558\uAE30'}
+          {'찜하기'}
         </button>
         <button type="button" className="detail-buy-btn">
-          {'\uBC14\uB85C \uAD6C\uB9E4'}
+          {'바로 구매'}
         </button>
         <button type="button" className="detail-pay-btn">
-          N pay {'\uAD6C\uB9E4'}
+          N pay {'구매'}
         </button>
       </div>
 
@@ -133,17 +133,17 @@ function PurchaseBox({
 const DEFAULT_DETAIL_PRODUCT = {
   id: '1',
   brand: 'Snow Peak',
-  title: '\uB79C\uB4DC \uD6C4\uB4DC \uD2F0\uC154\uCE20 Vintage Gray',
-  subtitle: '\uAC00\uBCCD\uAC8C \uC785\uAE30 \uC88B\uC740 \uD6C4\uB4DC \uC2A4\uC6E8\uD2B8 \uC154\uCE20',
+  title: '랜드 후드 티셔츠 Vintage Gray',
+  subtitle: '가볍게 입기 좋은 후드 스웨트 셔츠',
   price: 99000,
   modelName: 'S26SMF-HD50 VY',
   benefits: [
-    '\uCE74\uCE74\uC624 \uCC44\uB110 \uCD94\uAC00 \uC2DC \uC989\uC2DC \uD560\uC778 \uCFE0\uD3F0 \uB2E4\uC6B4\uB85C\uB4DC',
-    '\uC2E0\uADDC\uAC00\uC785\uC2DC 5\uCC9C\uC6D0 / 1\uB9CC\uC6D0 / 2\uB9CC\uC6D0 \uD560\uC778 \uCFE0\uD3F0 \uC81C\uACF5',
-    '\uD68C\uC6D0\uAD6C\uB9E4\uC2DC 5% \uB9C8\uC77C\uB9AC\uC9C0 \uC99D\uC815',
+    '카카오 채널 추가 시 즉시 할인 쿠폰 다운로드',
+    '신규가입시 5천원 / 1만원 / 2만원 할인 쿠폰 제공',
+    '회원구매시 5% 마일리지 증정',
   ],
-  shippingText1: '\uD3C9\uC77C 15\uC2DC \uC774\uC804 \uC8FC\uBB38\uAC74 \uB2F9\uC77C \uCD9C\uACE0',
-  shippingText2: '3\uB9CC\uC6D0 \uC774\uC0C1 \uAD6C\uB9E4 \uC2DC \uBB34\uB8CC\uBC30\uC1A1',
+  shippingText1: '평일 15시 이전 주문건 당일 출고',
+  shippingText2: '3만원 이상 구매 시 무료배송',
   mainImages: [
     '/img/detail/detail01.jpg',
     '/img/detail/detail02.jpg',
@@ -182,15 +182,15 @@ const getBagSize = (title) => {
 const getSizeOptions = (catalogProduct) => {
   if (!catalogProduct) return CLOTHING_SIZES;
 
-  if (catalogProduct.category === '\uAC00\uBC29') {
+  if (catalogProduct.category === '가방') {
     return getBagSize(catalogProduct.title);
   }
 
-  if (catalogProduct.category === '\uC288\uC988') {
+  if (catalogProduct.category === '슈즈') {
     return SHOES_SIZES;
   }
 
-  if (catalogProduct.category === '\uBAA8\uC790' || catalogProduct.category === '\uC6A9\uD488') {
+  if (catalogProduct.category === '모자' || catalogProduct.category === '용품') {
     return ['FREE'];
   }
 
@@ -217,7 +217,7 @@ const buildDetailProduct = (routeId) => {
     modelName: String(catalogProduct.id).toUpperCase(),
     mainImages: catalogProduct.mainImages || [mainImage],
     colors: catalogProduct.colors || [
-      { name: catalogProduct.color || '\uAE30\uBCF8', image: mainImage },
+      { name: catalogProduct.color || '기본', image: mainImage },
     ],
     sizes: getSizeOptions(catalogProduct),
     isSoldOut: catalogProduct.isSoldOut || catalogProduct.badge === 'SOLD OUT',
@@ -254,12 +254,12 @@ function Detail01() {
 
   const goCart = () => {
     if (product.isSoldOut) {
-      alert('\uD488\uC808 \uC0C1\uD488\uC740 \uC7A5\uBC14\uAD6C\uB2C8\uC5D0 \uB2F4\uC744 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.');
+      alert('품절 상품은 장바구니에 담을 수 없습니다.');
       return;
     }
 
     if (!selectedColor || !selectedSize) {
-      alert('\uC0C9\uC0C1\uACFC \uC0AC\uC774\uC988\uB97C \uC120\uD0DD\uD574\uC8FC\uC138\uC694.');
+      alert('색상과 사이즈를 선택해주세요.');
       return;
     }
 
@@ -316,7 +316,7 @@ function Detail01() {
                 }`}
                 onClick={() => moveToSection('detail-info')}
               >
-                {'\uC0C1\uC138\uC815\uBCF4'}
+                {'상세정보'}
               </button>
 
               <button
@@ -326,7 +326,7 @@ function Detail01() {
                 }`}
                 onClick={() => moveToSection('detail-size')}
               >
-                {'\uC0AC\uC774\uC988'}
+                {'사이즈'}
               </button>
 
               <button
@@ -336,7 +336,7 @@ function Detail01() {
                 }`}
                 onClick={() => moveToSection('detail-review')}
               >
-                {'\uB9AC\uBDF0'}
+                {'리뷰'}
               </button>
 
               <button
@@ -346,7 +346,7 @@ function Detail01() {
                 }`}
                 onClick={() => moveToSection('detail-qna')}
               >
-                {'\uBB38\uC758'}
+                {'문의'}
               </button>
             </div>
 
@@ -378,9 +378,9 @@ function Detail01() {
             </section>
 
             <section id="detail-qna" className="detail-section">
-              <h3 className="detail-section-heading">{'\uBB38\uC758'}</h3>
+              <h3 className="detail-section-heading">{'문의'}</h3>
               <p className="detail-placeholder-text">
-                {'\uB4F1\uB85D\uB41C \uC0C1\uD488\uBB38\uC758\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'}
+                {'등록된 상품문의가 없습니다.'}
               </p>
             </section>
           </section>
@@ -409,11 +409,11 @@ function Detail01() {
             aria-labelledby="cart-modal-title"
           >
             <div className="cart-modal-head">
-              <h3 id="cart-modal-title">{'\uC7A5\uBC14\uAD6C\uB2C8 \uB2F4\uAE30'}</h3>
+              <h3 id="cart-modal-title">{'장바구니 담기'}</h3>
               <button
                 type="button"
                 className="cart-modal-close"
-                aria-label={'\uB2EB\uAE30'}
+                aria-label={'닫기'}
                 onClick={() => setIsCartModalOpen(false)}
               >
                 x
@@ -421,21 +421,21 @@ function Detail01() {
             </div>
 
             <div className="cart-modal-body">
-              <div className="cart-modal-icon">{'\uD83D\uDED2'}</div>
-              <strong>{'\uC0C1\uD488\uC774 \uC7A5\uBC14\uAD6C\uB2C8\uC5D0 \uB2F4\uACBC\uC2B5\uB2C8\uB2E4.'}</strong>
-              <p>{'\uC7A5\uBC14\uAD6C\uB2C8\uB85C \uC774\uB3D9\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?'}</p>
+              <div className="cart-modal-icon">{'🛒'}</div>
+              <strong>{'상품이 장바구니에 담겼습니다.'}</strong>
+              <p>{'장바구니로 이동하시겠습니까?'}</p>
             </div>
 
             <div className="cart-modal-actions">
               <button type="button" onClick={() => setIsCartModalOpen(false)}>
-                {'\uC1FC\uD551 \uACC4\uC18D\uD558\uAE30'}
+                {'쇼핑 계속하기'}
               </button>
               <button
                 type="button"
                 className="primary"
                 onClick={() => navigate('/cart')}
               >
-                {'\uC7A5\uBC14\uAD6C\uB2C8 \uAC00\uAE30'}
+                {'장바구니 가기'}
               </button>
             </div>
           </div>
