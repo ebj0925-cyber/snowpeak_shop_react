@@ -204,6 +204,187 @@ http://localhost:3000
 npm run build
 ```
 
+
+## 포트폴리오 전체 슬라이드
+
+아래 이미지는 최종 포트폴리오 PPT를 슬라이드별 이미지로 변환한 자료입니다.
+
+### Slide 01
+
+![Snow Peak Portfolio Slide 01](./portfolio/img/snowpeak_portfolio_final/slide01.png)
+
+### Slide 02
+
+![Snow Peak Portfolio Slide 02](./portfolio/img/snowpeak_portfolio_final/slide02.png)
+
+### Slide 03
+
+![Snow Peak Portfolio Slide 03](./portfolio/img/snowpeak_portfolio_final/slide03.png)
+
+### Slide 04
+
+![Snow Peak Portfolio Slide 04](./portfolio/img/snowpeak_portfolio_final/slide04.png)
+
+### Slide 05
+
+![Snow Peak Portfolio Slide 05](./portfolio/img/snowpeak_portfolio_final/slide05.png)
+
+### Slide 06
+
+![Snow Peak Portfolio Slide 06](./portfolio/img/snowpeak_portfolio_final/slide06.png)
+
+### Slide 07
+
+![Snow Peak Portfolio Slide 07](./portfolio/img/snowpeak_portfolio_final/slide07.png)
+
+### Slide 08
+
+![Snow Peak Portfolio Slide 08](./portfolio/img/snowpeak_portfolio_final/slide08.png)
+
+### Slide 09
+
+![Snow Peak Portfolio Slide 09](./portfolio/img/snowpeak_portfolio_final/slide09.png)
+
+### Slide 10
+
+![Snow Peak Portfolio Slide 10](./portfolio/img/snowpeak_portfolio_final/slide10.png)
+
+### Slide 11
+
+![Snow Peak Portfolio Slide 11](./portfolio/img/snowpeak_portfolio_final/slide11.png)
+
+### Slide 12
+
+![Snow Peak Portfolio Slide 12](./portfolio/img/snowpeak_portfolio_final/slide12.png)
+
+### Slide 13
+
+![Snow Peak Portfolio Slide 13](./portfolio/img/snowpeak_portfolio_final/slide13.png)
+
+### Slide 14
+
+![Snow Peak Portfolio Slide 14](./portfolio/img/snowpeak_portfolio_final/slide14.png)
+
+### Slide 15
+
+![Snow Peak Portfolio Slide 15](./portfolio/img/snowpeak_portfolio_final/slide15.png)
+
+### Slide 16
+
+![Snow Peak Portfolio Slide 16](./portfolio/img/snowpeak_portfolio_final/slide16.png)
+
+### Slide 17
+
+![Snow Peak Portfolio Slide 17](./portfolio/img/snowpeak_portfolio_final/slide17.png)
+
+### Slide 18
+
+![Snow Peak Portfolio Slide 18](./portfolio/img/snowpeak_portfolio_final/slide18.png)
+
+### Slide 19
+
+![Snow Peak Portfolio Slide 19](./portfolio/img/snowpeak_portfolio_final/slide19.png)
+
+### Slide 20
+
+![Snow Peak Portfolio Slide 20](./portfolio/img/snowpeak_portfolio_final/slide20.png)
+
+### Slide 21
+
+![Snow Peak Portfolio Slide 21](./portfolio/img/snowpeak_portfolio_final/slide21.png)
+
+### Slide 22
+
+![Snow Peak Portfolio Slide 22](./portfolio/img/snowpeak_portfolio_final/slide22.png)
+
+### Slide 23
+
+![Snow Peak Portfolio Slide 23](./portfolio/img/snowpeak_portfolio_final/slide23.png)
+
+### Slide 24
+
+![Snow Peak Portfolio Slide 24](./portfolio/img/snowpeak_portfolio_final/slide24.png)
+
+### Slide 25
+
+![Snow Peak Portfolio Slide 25](./portfolio/img/snowpeak_portfolio_final/slide25.png)
+
+### Slide 26
+
+![Snow Peak Portfolio Slide 26](./portfolio/img/snowpeak_portfolio_final/slide26.png)
+
+### Slide 27
+
+![Snow Peak Portfolio Slide 27](./portfolio/img/snowpeak_portfolio_final/slide27.png)
+
+### Slide 28
+
+![Snow Peak Portfolio Slide 28](./portfolio/img/snowpeak_portfolio_final/slide28.png)
+
+### Slide 29
+
+![Snow Peak Portfolio Slide 29](./portfolio/img/snowpeak_portfolio_final/slide29.png)
+
+### Slide 30
+
+![Snow Peak Portfolio Slide 30](./portfolio/img/snowpeak_portfolio_final/slide30.png)
+
+### Slide 31
+
+![Snow Peak Portfolio Slide 31](./portfolio/img/snowpeak_portfolio_final/slide31.png)
+
+### Slide 32
+
+![Snow Peak Portfolio Slide 32](./portfolio/img/snowpeak_portfolio_final/slide32.png)
+
+### Slide 33
+
+![Snow Peak Portfolio Slide 33](./portfolio/img/snowpeak_portfolio_final/slide33.png)
+
+### Slide 34
+
+![Snow Peak Portfolio Slide 34](./portfolio/img/snowpeak_portfolio_final/slide34.png)
+
+### Slide 35
+
+![Snow Peak Portfolio Slide 35](./portfolio/img/snowpeak_portfolio_final/slide35.png)
+
+### Slide 36
+
+![Snow Peak Portfolio Slide 36](./portfolio/img/snowpeak_portfolio_final/slide36.png)
+
+### Slide 37
+
+![Snow Peak Portfolio Slide 37](./portfolio/img/snowpeak_portfolio_final/slide37.png)
+
+### Slide 38
+
+![Snow Peak Portfolio Slide 38](./portfolio/img/snowpeak_portfolio_final/slide38.png)
+
+### Slide 39
+
+![Snow Peak Portfolio Slide 39](./portfolio/img/snowpeak_portfolio_final/slide39.png)
+
+### Slide 40
+
+![Snow Peak Portfolio Slide 40](./portfolio/img/snowpeak_portfolio_final/slide40.png)
+
+### Slide 41
+
+![Snow Peak Portfolio Slide 41](./portfolio/img/snowpeak_portfolio_final/slide41.png)
+
+### Slide 42
+
+![Snow Peak Portfolio Slide 42](./portfolio/img/snowpeak_portfolio_final/slide42.png)
+
+### Slide 43
+
+![Snow Peak Portfolio Slide 43](./portfolio/img/snowpeak_portfolio_final/slide43.png)
+
+### Slide 44
+
+![Snow Peak Portfolio Slide 44](./portfolio/img/snowpeak_portfolio_final/slide44.png)
+
 ## 작업하면서 신경 쓴 부분
 
 - 실제 쇼핑몰처럼 메인, 카테고리, 상세, 장바구니 흐름이 이어지도록 구성
