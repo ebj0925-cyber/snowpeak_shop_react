@@ -10,7 +10,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function BagSection() {
-  const items = BagData;
+  const items = BagData.map((item) => ({
+    ...item,
+    id: `bag-${item.id}`,
+  }));
 
   return (
     <section className="product-slider-section">
